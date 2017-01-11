@@ -3,3 +3,12 @@ body {
   padding: 0;
   font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
 }
+.choice {
+	padding: 20px;
+	margin: 15px;
+	border: 1px solid black;
+    border-radius: 5px;
+}
+.choice input {
+	margin: 5px;
+}
