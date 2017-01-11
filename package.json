@@ -1,0 +1,19 @@
+{
+  "name": "test-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "inferno-scripts": "0.11.0"
+  },
+  "dependencies": {
+    "babel-plugin-inferno": "^1.5.0",
+    "inferno": "^1.1.2",
+    "inferno-component": "^1.1.2"
+  },
+  "scripts": {
+    "start": "inferno-scripts start",
+    "build": "inferno-scripts build",
+    "test": "inferno-scripts test --env=jsdom",
+    "eject": "inferno-scripts eject"
+  }
+}
