@@ -8,6 +8,7 @@ class Quiz extends Component {
 		correct: false,
 		currentQuestion: questions[0],
 		currentPostion: 0,
+		questions: questions
 	}
 	componentWillMount = () => {
 		this.selectedCheckboxes = new Set();
@@ -26,9 +27,17 @@ class Quiz extends Component {
 			console.log(checkbox + ' is selected');
 		}
 		//check correct answer here
-		if (this.state.correct) {
-			//go to next question
-		}
+		// if (this.state.correct) {
+		// 	//go to next question
+		// }
+		
+		this.setState({
+			currentPostion: this.state.currentPostion+1,
+			currentQuestion: this.state.questions[this.state.currentPostion]
+		}, function(){
+			
+		});
+		console.log(this.state);
 		console.log(this.selectedCheckboxes);
 	}
 	createCheckBox = label => (
